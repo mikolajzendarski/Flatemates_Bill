@@ -1,0 +1,35 @@
+Title: Flatmates Bill
+Description:
+An app that gets as inputs the amount of a bill from particular
+period that each of flatmates stayed in the house
+and returns amount of money they should  pay.
+It also should generate PDF report.
+Objects:
+Bill:
+    amount
+    period
+Flatmates:
+    name
+    days_in_house
+    pays(bill)
+PdfReport:
+    filename
+    generate(flatmate1, flatmate2, bill)
+
+bill 120   people  2
+
+pay 60   days 20
+
+pay 60   days 25
+
+20/(20 + 25)
+
+0,4444444 = 0,45
+120x0,4(4) = 53,33
+120*0.5 60
+
+25/(20+25)
+0,55(5)
+120*0,555
+66.67
+53,33 + 66.67 =120
