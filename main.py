@@ -1,5 +1,6 @@
 from Flat import Bill, Flatmate
 from PDFbody import PdfReport
+from filesharer import FileSharer
 
 amount = int(input("Enter the bill amount: "))
 month_year = str(input("Enter month and year: "))
@@ -20,3 +21,5 @@ print("Marry pays: ", marry.pays(the_bill, flatmate2=john))
 pdf_report = PdfReport(filename=f"{month_year}.pdf")
 pdf_report.generate(flatmate1=john, flatmate2=marry, bill=the_bill)
 
+file_sharer = FileSharer(filepath=pdf_report.filename)
+print(file_sharer.share())
